@@ -84,6 +84,39 @@ public class Main {
 		
 		gohan.printar();
 		
+		Cenario campo = new Cenario();
+		campo.nome = "campo";
+		campo.descricao = "arvores";
+		
+		System.out.println("------------Exercicio 4-----------------------");
+		
+		
+		Personagem	goku = new Personagem();
+		goku.nome = "goku";
+		goku.strike = 20;
+		goku.specialMove = "aoe";
+		
+		Personagem	vegeta = new Personagem();
+		vegeta.nome = "vegeta";
+		vegeta.strike = 10;
+		vegeta.specialMove = "aoe";
+
+		Luta luta1 = new Luta();
+		luta1.player1 = goku;
+		luta1.player2 = vegeta;
+		luta1.local = campo;
+		
+		luta1.printarLuta();
+		
+		Personagem trunks = new Personagem("trunks", 10, "buff");
+		luta1.player2 = trunks;
+		
+		luta1.printarLuta();
+		
+		
+		
+		
+		
 	}
 
 }
